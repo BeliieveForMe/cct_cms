@@ -1,0 +1,5 @@
+server:
+  port: 21300
+
+mconfig:
+  swagger-ui-open: true

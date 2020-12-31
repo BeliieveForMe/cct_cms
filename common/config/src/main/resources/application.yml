@@ -1,0 +1,14 @@
+server:
+  port: 21100
+
+logging:
+  config:
+    classpath: logback-${spring.profiles.active}-spring.xml
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"
+  level:
+    root: INFO
+  file:
+    name: "./logs/21100.log"
+    max-size: 10MB
